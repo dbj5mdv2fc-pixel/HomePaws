@@ -25,8 +25,8 @@
   html { scroll-behavior: smooth; }
   body {
     font-family: 'Lato', sans-serif;
-    background: var(--cream-light);
-    color: var(--text);
+    background: #faf7f2;
+    color: #2c2c2c;
     overflow-x: hidden;
   }
 
@@ -35,7 +35,7 @@ nav {
 position: fixed; top: 0; left: 0; right: 0; z-index: 100;
 background: rgba(242,237,228,0.97);
 backdrop-filter: blur(10px);
-border-bottom: 1px solid var(–border);
+border-bottom: 1px solid rgba(180,150,110,0.25);
 padding: 0 0.75rem 0 0.5rem;
 display: flex; align-items: center; justify-content: space-between;
 height: 64px;
@@ -53,12 +53,12 @@ text-transform: uppercase;
 font-weight: 700;
 transition: color 0.2s;
 }
-.nav-links a:hover { color: var(–orange); }
+.nav-links a:hover { color: #e2722a; }
 
 /* HERO */
 .hero {
 min-height: 100vh;
-background: var(–cream-light);
+background: #faf7f2;
 display: flex; align-items: center; justify-content: center;
 padding: 80px 1.5rem 3rem;
 text-align: center;
@@ -76,7 +76,7 @@ margin-bottom: 1.5rem;
 font-family: ‘Playfair Display’, serif;
 font-style: italic;
 font-size: 1.15rem;
-color: var(–text-light);
+color: #6b6560;
 line-height: 1.65;
 margin-bottom: 2.25rem;
 }
@@ -112,12 +112,12 @@ transition: all 0.2s;
 
 /* MEET & GREET BANNER */
 .meet-banner {
-background: var(–cream-light);
+background: #faf7f2;
 padding: 1.5rem;
 }
 .meet-card {
 background: white;
-border: 1px solid var(–border);
+border: 1px solid rgba(180,150,110,0.25);
 border-radius: 18px;
 padding: 1.75rem;
 max-width: 680px; margin: 0 auto;
@@ -127,13 +127,13 @@ display: flex; flex-direction: column; gap: 0.75rem;
 .meet-paws { font-size: 1.5rem; }
 .meet-card h3 {
 font-family: ‘Playfair Display’, serif;
-font-size: 1.2rem; color: var(–teal-dark);
+font-size: 1.2rem; color: #1d5f6e;
 margin-bottom: 0.35rem;
 }
-.meet-card p { font-size: 0.95rem; color: var(–text-light); line-height: 1.6; }
+.meet-card p { font-size: 0.95rem; color: #6b6560; line-height: 1.6; }
 .btn-orange {
 display: inline-block;
-background: var(–orange);
+background: #e2722a;
 color: white;
 padding: 0.75rem 1.75rem;
 border-radius: 50px;
@@ -142,26 +142,26 @@ font-weight: 700; font-size: 0.9rem;
 align-self: flex-start;
 transition: background 0.2s;
 }
-.btn-orange:hover { background: var(–orange); }
+.btn-orange:hover { background: #e2722a; }
 
 /* SECTIONS */
-section { padding: 4.5rem 1.5rem; background: var(–cream-light); }
+section { padding: 4.5rem 1.5rem; background: #faf7f2; }
 .section-label {
 font-size: 0.72rem; font-weight: 700;
 letter-spacing: 0.14em; text-transform: uppercase;
-color: var(–orange); margin-bottom: 0.6rem; text-align: center;
+color: #e2722a; margin-bottom: 0.6rem; text-align: center;
 }
 .section-title {
 font-family: ‘Playfair Display’, serif;
 font-size: clamp(1.8rem, 5vw, 2.6rem);
-color: var(–teal-dark);
+color: #1d5f6e;
 text-align: center; line-height: 1.2;
 margin-bottom: 0.75rem;
 }
 .section-sub {
 font-family: ‘Playfair Display’, serif;
 font-style: italic;
-font-size: 1rem; color: var(–text-light);
+font-size: 1rem; color: #6b6560;
 text-align: center; line-height: 1.6;
 margin-bottom: 2.5rem;
 max-width: 520px; margin-left: auto; margin-right: auto;
@@ -172,7 +172,7 @@ max-width: 520px; margin-left: auto; margin-right: auto;
 .service-list { display: flex; flex-direction: column; gap: 1rem; }
 .service-card {
 background: white;
-border: 1px solid var(–border);
+border: 1px solid rgba(180,150,110,0.25);
 border-radius: 16px;
 padding: 1.4rem 1.5rem;
 display: flex; align-items: flex-start; gap: 1rem;
@@ -180,25 +180,25 @@ display: flex; align-items: flex-start; gap: 1rem;
 .service-emoji { font-size: 2rem; flex-shrink: 0; }
 .service-card h4 {
 font-family: ‘Playfair Display’, serif;
-font-size: 1.05rem; color: var(–teal-dark);
+font-size: 1.05rem; color: #1d5f6e;
 margin-bottom: 0.3rem;
 }
-.service-card p { font-size: 0.9rem; color: var(–text-light); line-height: 1.55; }
+.service-card p { font-size: 0.9rem; color: #6b6560; line-height: 1.55; }
 
 /* WHY SECTION */
-#why { background: var(–cream-light); }
+#why { background: #faf7f2; }
 .why-script {
 font-family: ‘Dancing Script’, cursive;
-font-size: 1.8rem; color: var(–orange);
+font-size: 1.8rem; color: #e2722a;
 text-align: center; margin-bottom: 0.4rem;
 }
-.why-body { font-size: 0.97rem; color: var(–text); line-height: 1.75; margin-bottom: 1.25rem; }
+.why-body { font-size: 0.97rem; color: #2c2c2c; line-height: 1.75; margin-bottom: 1.25rem; }
 .why-checks { list-style: none; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.6rem; }
 .why-checks li {
 display: flex; align-items: flex-start; gap: 0.6rem;
-font-size: 0.95rem; color: var(–text);
+font-size: 0.95rem; color: #2c2c2c;
 }
-.why-checks li::before { content: ‘✓’; color: var(–teal); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.why-checks li::before { content: ‘✓’; color: #2a7b8c; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
 .btn-orange-center {
 display: block; width: fit-content; margin: 0 auto;
 background: #e2722a !important; color: white !important;
@@ -206,23 +206,23 @@ padding: 0.85rem 2rem; border-radius: 50px;
 text-decoration: none; font-weight: 700; font-size: 0.95rem;
 transition: background 0.2s;
 }
-.btn-orange-center:hover { background: var(–orange); }
+.btn-orange-center:hover { background: #e2722a; }
 
 /* PRICING */
-#pricing { background: var(–cream-light); }
+#pricing { background: #faf7f2; }
 .price-list { display: flex; flex-direction: column; gap: 1rem; }
 .price-card {
 background: white;
-border: 1px solid var(–border);
+border: 1px solid rgba(180,150,110,0.25);
 border-radius: 16px;
 padding: 1.5rem;
 position: relative;
 overflow: hidden;
 }
-.price-card.popular { border-color: var(–orange); border-width: 2px; }
+.price-card.popular { border-color: #e2722a; border-width: 2px; }
 .popular-badge {
 position: absolute; top: 0; right: 0;
-background: var(–orange); color: white;
+background: #e2722a; color: white;
 font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em;
 text-transform: uppercase;
 padding: 0.3rem 0.9rem;
@@ -230,45 +230,45 @@ border-bottom-left-radius: 10px;
 }
 .price-card h4 {
 font-family: ‘Playfair Display’, serif;
-font-size: 1.1rem; color: var(–teal-dark);
+font-size: 1.1rem; color: #1d5f6e;
 margin-bottom: 0.5rem;
 }
 .price-amount {
 display: flex; align-items: baseline; gap: 0.1rem;
 margin-bottom: 0.5rem;
 }
-.price-dollar { font-size: 1.1rem; color: var(–text-light); }
+.price-dollar { font-size: 1.1rem; color: #6b6560; }
 .price-num {
 font-family: ‘Playfair Display’, serif;
-font-size: 2.8rem; color: var(–orange); line-height: 1;
+font-size: 2.8rem; color: #e2722a; line-height: 1;
 }
-.price-unit { font-size: 0.88rem; color: var(–text-light); margin-left: 0.3rem; }
+.price-unit { font-size: 0.88rem; color: #6b6560; margin-left: 0.3rem; }
 .price-desc {
 font-family: ‘Playfair Display’, serif;
-font-style: italic; font-size: 0.92rem; color: var(–text-light);
+font-style: italic; font-size: 0.92rem; color: #6b6560;
 }
 .addons-card {
-background: var(–cream);
-border: 1px solid var(–border);
+background: #f7eee7;
+border: 1px solid rgba(180,150,110,0.25);
 border-radius: 16px;
 padding: 1.5rem; text-align: center;
 }
 .addons-card h4 {
 font-family: ‘Playfair Display’, serif;
-font-size: 1.1rem; color: var(–teal-dark);
+font-size: 1.1rem; color: #1d5f6e;
 margin-bottom: 1rem;
 }
 .addons-card p {
 font-family: ‘Playfair Display’, serif;
-font-style: italic; font-size: 0.92rem; color: var(–text-light);
+font-style: italic; font-size: 0.92rem; color: #6b6560;
 line-height: 1.8;
 }
 
 /* BOARDING */
-#boarding { background: var(–cream-light); }
+#boarding { background: #faf7f2; }
 .boarding-card {
 background: white;
-border: 2px solid var(–orange);
+border: 2px solid #e2722a;
 border-radius: 18px;
 padding: 1.75rem;
 max-width: 680px; margin: 0 auto 1rem;
@@ -276,62 +276,62 @@ max-width: 680px; margin: 0 auto 1rem;
 .boarding-card .b-icon { font-size: 2.5rem; margin-bottom: 0.75rem; display: block; }
 .boarding-card h3 {
 font-family: ‘Playfair Display’, serif;
-font-size: 1.25rem; color: var(–teal-dark);
+font-size: 1.25rem; color: #1d5f6e;
 margin-bottom: 0.2rem; line-height: 1.3;
 }
-.boarding-card h3 span { color: var(–orange); }
+.boarding-card h3 span { color: #e2722a; }
 .boarding-card .b-sub {
 font-family: ‘Playfair Display’, serif;
-font-style: italic; font-size: 0.92rem; color: var(–text-light);
+font-style: italic; font-size: 0.92rem; color: #6b6560;
 margin-bottom: 1.25rem; line-height: 1.55;
 }
 .boarding-features { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
-.boarding-features li { font-size: 0.93rem; color: var(–text); line-height: 1.4; }
+.boarding-features li { font-size: 0.93rem; color: #2c2c2c; line-height: 1.4; }
 
 /* CANCELLATION */
-#cancellation { background: var(–cream-light); }
+#cancellation { background: #faf7f2; }
 .cancel-list { display: flex; flex-direction: column; gap: 1rem; max-width: 680px; margin: 0 auto; }
 .cancel-card {
 background: white;
-border: 1px solid var(–border);
+border: 1px solid rgba(180,150,110,0.25);
 border-radius: 16px;
 padding: 1.5rem; text-align: center;
 }
 .cancel-card .c-icon { font-size: 2rem; margin-bottom: 0.6rem; display: block; }
 .cancel-card h4 {
 font-family: ‘Playfair Display’, serif;
-font-size: 1.05rem; color: var(–teal-dark);
+font-size: 1.05rem; color: #1d5f6e;
 margin-bottom: 0.3rem;
 }
-.cancel-card p { font-family: ‘Playfair Display’, serif; font-style: italic; font-size: 0.9rem; color: var(–text-light); }
+.cancel-card p { font-family: ‘Playfair Display’, serif; font-style: italic; font-size: 0.9rem; color: #6b6560; }
 
 /* CONTACT */
-#contact { background: var(–cream-light); }
+#contact { background: #faf7f2; }
 .contact-card {
 background: white;
-border: 1px solid var(–border);
+border: 1px solid rgba(180,150,110,0.25);
 border-radius: 18px;
 padding: 1.75rem;
 max-width: 680px; margin: 0 auto;
 display: flex; flex-direction: column; gap: 1rem;
 }
 .contact-row {
-background: var(–cream);
-border: 1px solid var(–border);
+background: #f7eee7;
+border: 1px solid rgba(180,150,110,0.25);
 border-radius: 12px;
 padding: 1rem 1.25rem;
 display: flex; align-items: center; gap: 1rem;
 text-decoration: none;
 transition: border-color 0.2s;
 }
-.contact-row:hover { border-color: var(–orange); }
+.contact-row:hover { border-color: #e2722a; }
 .contact-row .c-icon { font-size: 1.5rem; flex-shrink: 0; }
 .contact-row .c-label {
 font-size: 0.72rem; font-weight: 700;
 letter-spacing: 0.1em; text-transform: uppercase;
-color: var(–orange); margin-bottom: 0.15rem;
+color: #e2722a; margin-bottom: 0.15rem;
 }
-.contact-row .c-val { font-size: 0.97rem; color: var(–text); font-weight: 400; }
+.contact-row .c-val { font-size: 0.97rem; color: #2c2c2c; font-weight: 400; }
 
 /* FOOTER */
 footer {
@@ -352,7 +352,7 @@ font-size: 0.88rem; transition: color 0.2s;
 .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.5) !important; line-height: 1.6; }
 
 /* DIVIDER */
-.divider { border: none; border-top: 1px solid var(–border); margin: 0; }
+.divider { border: none; border-top: 1px solid rgba(180,150,110,0.25); margin: 0; }
 
 @media (max-width: 600px) {
 .nav-links { gap: 1rem; }
@@ -368,13 +368,13 @@ width: 100%;
 height: 320px;
 border-radius: 16px;
 overflow: hidden;
-border: 1px solid var(–border);
+border: 1px solid rgba(180,150,110,0.25);
 box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 .map-caption {
 text-align: center;
 font-size: 0.85rem;
-color: var(–text-light);
+color: #6b6560;
 margin-top: 0.75rem;
 font-style: italic;
 }
@@ -402,7 +402,7 @@ font-style: italic;
 <section class="hero">
   <div class="hero-inner">
     <img class="hero-logo" src="catnanny-logo.png" alt="The Cat Nanny by HomePaws">
-    <p class="hero-tagline">Specializing in stress-free, in-home cat care —<br>in your home or mine.</p>
+    <p class="hero-tagline">Specializing in stress-free, in-home cat care &mdash;<br>in your home or mine.</p>
     <div class="hero-buttons">
       <a href="tel:7155774568" class="btn-teal" style="display:block;width:100%;text-align:center;background:#2a7b8c;color:white;padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1rem;box-sizing:border-box;">Call or Text to Book</a>
       <a href="#pricing" class="btn-outline-orange" style="display:block;width:100%;text-align:center;background:transparent;color:#e2722a;padding:0.95rem 2rem;border-radius:50px;border:2px solid #e2722a;text-decoration:none;font-weight:700;font-size:1rem;box-sizing:border-box;">View Pricing</a>
@@ -420,7 +420,7 @@ font-style: italic;
       <span class="meet-paws">🐾</span>
       <div>
         <h3>Free Meet &amp; Greet!</h3>
-        <p>Before your first booking, I always offer a complimentary in-home meet-and-greet — so your cat and I can get acquainted before you ever leave town.</p>
+        <p>Before your first booking, I always offer a complimentary in-home meet-and-greet &mdash; so your cat and I can get acquainted before you ever leave town.</p>
       </div>
     </div>
     <a href="tel:7155774568" class="btn-orange" style="display:inline-block;background:#e2722a;color:white;padding:0.75rem 1.75rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.9rem;">Schedule Yours</a>
@@ -441,7 +441,7 @@ font-style: italic;
         <span class="service-emoji">🍽️</span>
         <div>
           <h4>Feeding &amp; Fresh Water</h4>
-          <p>Your cat's specific food routine, followed exactly — wet, dry, raw, or prescription diets.</p>
+          <p>Your cat's specific food routine, followed exactly &mdash; wet, dry, raw, or prescription diets.</p>
         </div>
       </div>
       <div class="service-card">
@@ -455,7 +455,7 @@ font-style: italic;
         <span class="service-emoji">🧶</span>
         <div>
           <h4>Playtime &amp; Affection</h4>
-          <p>Interactive play, brushing, and lap time — as much or as little as your cat prefers.</p>
+          <p>Interactive play, brushing, and lap time &mdash; as much or as little as your cat prefers.</p>
         </div>
       </div>
       <div class="service-card">
@@ -489,11 +489,11 @@ font-style: italic;
     <p class="why-script">Why HomePaws?</p>
     <h2 class="section-title">Cat care that feels like family</h2>
     <p style="height:1.5rem"></p>
-    <p class="why-body">I'm not just a pet sitter — I'm a lifelong cat lover who understands that your cat is family. Every visit is personal, attentive, and centered around your cat's comfort.</p>
-    <p class="why-body">Based in Chippewa Falls, WI, I serve a 30-mile radius and have experience with cats of all personalities — from social butterflies to shy introverts.</p>
+    <p class="why-body">I'm not just a pet sitter &mdash; I'm a lifelong cat lover who understands that your cat is family. Every visit is personal, attentive, and centered around your cat's comfort.</p>
+    <p class="why-body">Based in Chippewa Falls, WI, I serve a 30-mile radius and have experience with cats of all personalities &mdash; from social butterflies to shy introverts.</p>
     <ul class="why-checks">
       <li>Experience with medical needs and special care</li>
-      <li>Consistent caregiver — no strangers in your home</li>
+      <li>Consistent caregiver &mdash; no strangers in your home</li>
       <li>Your cat stays in their own environment, stress-free</li>
       <li>Free meet &amp; greet before every new booking</li>
     </ul>
@@ -512,7 +512,7 @@ font-style: italic;
     <p class="section-sub">No hidden fees. Just reliable, loving care at a fair price.</p>
     <div class="price-list">
       <div class="price-card">
-        <h4>Drop-In — 30 min</h4>
+        <h4>Drop-In &mdash; 30 min</h4>
         <div class="price-amount">
           <span class="price-dollar">$</span>
           <span class="price-num">27</span>
@@ -522,7 +522,7 @@ font-style: italic;
       </div>
       <div class="price-card popular">
         <span class="popular-badge">Popular</span>
-        <h4>Drop-In — 45 min</h4>
+        <h4>Drop-In &mdash; 45 min</h4>
         <div class="price-amount">
           <span class="price-dollar">$</span>
           <span class="price-num">34</span>
@@ -531,7 +531,7 @@ font-style: italic;
         <p class="price-desc">Everything above plus extra play &amp; cuddle time</p>
       </div>
       <div class="price-card">
-        <h4>Drop-In — 60 min</h4>
+        <h4>Drop-In &mdash; 60 min</h4>
         <div class="price-amount">
           <span class="price-dollar">$</span>
           <span class="price-num">40</span>
@@ -571,14 +571,14 @@ font-style: italic;
     <p class="section-sub">Prefer your cat to have a cozy home away from home? I've got you covered.</p>
     <div class="boarding-card">
       <span class="b-icon">🏡</span>
-      <h3>Your Cat's Own Private Room — <span>starting at &#36;60/night</span></h3>
-      <p class="b-sub">I'm happy to welcome your cat into my home! They'll have their own dedicated space — a large, comfortable room stocked with everything they need to feel right at home.</p>
+      <h3>Your Cat's Own Private Room &mdash; <span>starting at &#36;60/night</span></h3>
+      <p class="b-sub">I'm happy to welcome your cat into my home! They'll have their own dedicated space &mdash; a large, comfortable room stocked with everything they need to feel right at home.</p>
       <ul class="boarding-features">
-        <li>🛏️ Private room — just for your cat</li>
+        <li>🛏️ Private room &mdash; just for your cat</li>
         <li>🧸 All accessories provided (beds, toys, litter, scratching posts)</li>
         <li>🔍 Just bring their food and any medications</li>
         <li>📸 Daily photo updates so you can see them thriving</li>
-        <li>❤️ Calm, quiet home environment — no dogs</li>
+        <li>❤️ Calm, quiet home environment &mdash; no dogs</li>
       </ul>
     </div>
   </div>
@@ -592,22 +592,22 @@ font-style: italic;
   <div class="section-inner">
     <p class="section-label">Good to Know</p>
     <h2 class="section-title">Cancellation Policy</h2>
-    <p class="section-sub">Life happens — here's how I handle changes to bookings.</p>
+    <p class="section-sub">Life happens &mdash; here's how I handle changes to bookings.</p>
     <div class="cancel-list">
       <div class="cancel-card">
         <span class="c-icon">📅</span>
         <h4>48+ Hours Notice</h4>
-        <p>Full refund — no questions asked.</p>
+        <p>Full refund &mdash; no questions asked.</p>
       </div>
       <div class="cancel-card">
         <span class="c-icon">⏳</span>
-        <h4>24–48 Hours Notice</h4>
+        <h4>24&ndash;48 Hours Notice</h4>
         <p>50% refund of the booking total.</p>
       </div>
       <div class="cancel-card">
         <span class="c-icon">🚨</span>
         <h4>Less Than 24 Hours</h4>
-        <p>No refund — time has been reserved for your pet.</p>
+        <p>No refund &mdash; time has been reserved for your pet.</p>
       </div>
     </div>
   </div>
