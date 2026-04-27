@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cat Nanny by HomePaws | In-Home Cat Care, Chippewa Falls WI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal: #2a7b8c;
+    --teal-dark: #1d5f6e;
+    --orange: #e2722a;
+    --orange-light: #e2722a;
+    --cream: #f2ede4;
+    --cream-light: #faf7f2;
+    --text: #2c2c2c;
+    --text-light: #6b6560;
+    --white: #ffffff;
+    --border: rgba(180,150,110,0.25);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  a { color: inherit; text-decoration: none; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Lato', sans-serif;
+    background: #faf7f2;
+    color: #2c2c2c;
+    overflow-x: hidden;
+  }
+
+/* NAV */
+nav {
+position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+background: rgba(242,237,228,0.97);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(180,150,110,0.25);
+padding: 0 0.75rem 0 0.5rem;
+display: flex; align-items: center; justify-content: space-between;
+height: 64px;
+}
+.nav-logo { margin-right: auto; }
+.nav-logo img { height: 52px; width: 170px; object-fit: contain; }
+.nav-links { display: flex; gap: 1.75rem; list-style: none; }
+.nav-links a {
+text-decoration: none !important;
+color: #1d5f6e !important;
+-webkit-text-fill-color: #1d5f6e !important;
+font-size: 0.78rem;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+font-weight: 700;
+transition: color 0.2s;
+}
+.nav-links a:hover { color: #e2722a; }
+
+/* HERO */
+.hero {
+min-height: 100vh;
+background: #faf7f2;
+display: flex; align-items: center; justify-content: center;
+padding: 80px 1.5rem 3rem;
+text-align: center;
+}
+.hero-inner {
+max-width: 480px; width: 100%;
+display: flex; flex-direction: column; align-items: center;
+}
+.hero-logo {
+width: 85%; max-width: 420px; height: auto;
+margin-bottom: 1.5rem;
+}
+
+.hero-tagline {
+font-family: ‘Playfair Display’, serif;
+font-style: italic;
+font-size: 1.15rem;
+color: #6b6560;
+line-height: 1.65;
+margin-bottom: 2.25rem;
+}
+.hero-buttons {
+display: flex; flex-direction: column; gap: 0.9rem; width: 100%;
+}
+.btn-teal {
+display: block !important; width: 100% !important; text-align: center !important;
+background: #2a7b8c !important;
+color: white !important;
+padding: 1rem 2rem !important;
+border-radius: 50px !important;
+text-decoration: none !important;
+font-weight: 700 !important; font-size: 1rem !important;
+letter-spacing: 0.02em;
+box-sizing: border-box;
+transition: background 0.2s, transform 0.2s;
+}
+.btn-teal:hover { background: #1d5f6e !important; transform: translateY(-1px); }
+.btn-outline-orange {
+display: block !important; width: 100% !important; text-align: center !important;
+background: transparent !important;
+color: #e2722a !important;
+padding: 0.95rem 2rem !important;
+border-radius: 50px !important;
+border: 2px solid #e2722a !important;
+text-decoration: none !important;
+font-weight: 700 !important; font-size: 1rem !important;
+box-sizing: border-box;
+transition: all 0.2s;
+}
+.btn-outline-orange:hover { background: #e2722a !important; color: white !important; }
+
+/* MEET & GREET BANNER */
+.meet-banner {
+background: #faf7f2;
+padding: 1.5rem;
+}
+.meet-card {
+background: white;
+border: 1px solid rgba(180,150,110,0.25);
+border-radius: 18px;
+padding: 1.75rem;
+max-width: 680px; margin: 0 auto;
+display: flex; flex-direction: column; gap: 0.75rem;
+}
+.meet-card-top { display: flex; align-items: flex-start; gap: 0.75rem; }
+.meet-paws { font-size: 1.5rem; }
+.meet-card h3 {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.2rem; color: #1d5f6e;
+margin-bottom: 0.35rem;
+}
+.meet-card p { font-size: 0.95rem; color: #6b6560; line-height: 1.6; }
+.btn-orange {
+display: inline-block;
+background: #e2722a;
+color: white;
+padding: 0.75rem 1.75rem;
+border-radius: 50px;
+text-decoration: none;
+font-weight: 700; font-size: 0.9rem;
+align-self: flex-start;
+transition: background 0.2s;
+}
+.btn-orange:hover { background: #e2722a; }
+
+/* SECTIONS */
+section { padding: 4.5rem 1.5rem; background: #faf7f2; }
+.section-label {
+font-size: 0.72rem; font-weight: 700;
+letter-spacing: 0.14em; text-transform: uppercase;
+color: #e2722a; margin-bottom: 0.6rem; text-align: center;
+}
+.section-title {
+font-family: ‘Playfair Display’, serif;
+font-size: clamp(1.8rem, 5vw, 2.6rem);
+color: #1d5f6e;
+text-align: center; line-height: 1.2;
+margin-bottom: 0.75rem;
+}
+.section-sub {
+font-family: ‘Playfair Display’, serif;
+font-style: italic;
+font-size: 1rem; color: #6b6560;
+text-align: center; line-height: 1.6;
+margin-bottom: 2.5rem;
+max-width: 520px; margin-left: auto; margin-right: auto;
+}
+.section-inner { max-width: 680px; margin: 0 auto; }
+
+/* SERVICE CARDS */
+.service-list { display: flex; flex-direction: column; gap: 1rem; }
+.service-card {
+background: white;
+border: 1px solid rgba(180,150,110,0.25);
+border-radius: 16px;
+padding: 1.4rem 1.5rem;
+display: flex; align-items: flex-start; gap: 1rem;
+}
+.service-emoji { font-size: 2rem; flex-shrink: 0; }
+.service-card h4 {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.05rem; color: #1d5f6e;
+margin-bottom: 0.3rem;
+}
+.service-card p { font-size: 0.9rem; color: #6b6560; line-height: 1.55; }
+
+/* WHY SECTION */
+#why { background: #faf7f2; }
+.why-script {
+font-family: ‘Dancing Script’, cursive;
+font-size: 1.8rem; color: #e2722a;
+text-align: center; margin-bottom: 0.4rem;
+}
+.why-body { font-size: 0.97rem; color: #2c2c2c; line-height: 1.75; margin-bottom: 1.25rem; }
+.why-checks { list-style: none; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.6rem; }
+.why-checks li {
+display: flex; align-items: flex-start; gap: 0.6rem;
+font-size: 0.95rem; color: #2c2c2c;
+}
+.why-checks li::before { content: ‘✓’; color: #2a7b8c; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.btn-orange-center {
+display: block; width: fit-content; margin: 0 auto;
+background: #e2722a !important; color: white !important;
+padding: 0.85rem 2rem; border-radius: 50px;
+text-decoration: none; font-weight: 700; font-size: 0.95rem;
+transition: background 0.2s;
+}
+.btn-orange-center:hover { background: #e2722a; }
+
+/* PRICING */
+#pricing { background: #faf7f2; }
+.price-list { display: flex; flex-direction: column; gap: 1rem; }
+.price-card {
+background: white;
+border: 1px solid rgba(180,150,110,0.25);
+border-radius: 16px;
+padding: 1.5rem;
+position: relative;
+overflow: hidden;
+}
+.price-card.popular { border-color: #e2722a; border-width: 2px; }
+.popular-badge {
+position: absolute; top: 0; right: 0;
+background: #e2722a; color: white;
+font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em;
+text-transform: uppercase;
+padding: 0.3rem 0.9rem;
+border-bottom-left-radius: 10px;
+}
+.price-card h4 {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.1rem; color: #1d5f6e;
+margin-bottom: 0.5rem;
+}
+.price-amount {
+display: flex; align-items: baseline; gap: 0.1rem;
+margin-bottom: 0.5rem;
+}
+.price-dollar { font-size: 1.1rem; color: #6b6560; }
+.price-num {
+font-family: ‘Playfair Display’, serif;
+font-size: 2.8rem; color: #e2722a; line-height: 1;
+}
+.price-unit { font-size: 0.88rem; color: #6b6560; margin-left: 0.3rem; }
+.price-desc {
+font-family: ‘Playfair Display’, serif;
+font-style: italic; font-size: 0.92rem; color: #6b6560;
+}
+.addons-card {
+background: #f7eee7;
+border: 1px solid rgba(180,150,110,0.25);
+border-radius: 16px;
+padding: 1.5rem; text-align: center;
+}
+.addons-card h4 {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.1rem; color: #1d5f6e;
+margin-bottom: 1rem;
+}
+.addons-card p {
+font-family: ‘Playfair Display’, serif;
+font-style: italic; font-size: 0.92rem; color: #6b6560;
+line-height: 1.8;
+}
+
+/* BOARDING */
+#boarding { background: #faf7f2; }
+.boarding-card {
+background: white;
+border: 2px solid #e2722a;
+border-radius: 18px;
+padding: 1.75rem;
+max-width: 680px; margin: 0 auto 1rem;
+}
+.boarding-card .b-icon { font-size: 2.5rem; margin-bottom: 0.75rem; display: block; }
+.boarding-card h3 {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.25rem; color: #1d5f6e;
+margin-bottom: 0.2rem; line-height: 1.3;
+}
+.boarding-card h3 span { color: #e2722a; }
+.boarding-card .b-sub {
+font-family: ‘Playfair Display’, serif;
+font-style: italic; font-size: 0.92rem; color: #6b6560;
+margin-bottom: 1.25rem; line-height: 1.55;
+}
+.boarding-features { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
+.boarding-features li { font-size: 0.93rem; color: #2c2c2c; line-height: 1.4; }
+
+/* CANCELLATION */
+#cancellation { background: #faf7f2; }
+.cancel-list { display: flex; flex-direction: column; gap: 1rem; max-width: 680px; margin: 0 auto; }
+.cancel-card {
+background: white;
+border: 1px solid rgba(180,150,110,0.25);
+border-radius: 16px;
+padding: 1.5rem; text-align: center;
+}
+.cancel-card .c-icon { font-size: 2rem; margin-bottom: 0.6rem; display: block; }
+.cancel-card h4 {
+font-family: ‘Playfair Display’, serif;
+font-size: 1.05rem; color: #1d5f6e;
+margin-bottom: 0.3rem;
+}
+.cancel-card p { font-family: ‘Playfair Display’, serif; font-style: italic; font-size: 0.9rem; color: #6b6560; }
+
+/* CONTACT */
+#contact { background: #faf7f2; }
+.contact-card {
+background: white;
+border: 1px solid rgba(180,150,110,0.25);
+border-radius: 18px;
+padding: 1.75rem;
+max-width: 680px; margin: 0 auto;
+display: flex; flex-direction: column; gap: 1rem;
+}
+.contact-row {
+background: #f7eee7;
+border: 1px solid rgba(180,150,110,0.25);
+border-radius: 12px;
+padding: 1rem 1.25rem;
+display: flex; align-items: center; gap: 1rem;
+text-decoration: none;
+transition: border-color 0.2s;
+}
+.contact-row:hover { border-color: #e2722a; }
+.contact-row .c-icon { font-size: 1.5rem; flex-shrink: 0; }
+.contact-row .c-label {
+font-size: 0.72rem; font-weight: 700;
+letter-spacing: 0.1em; text-transform: uppercase;
+color: #e2722a; margin-bottom: 0.15rem;
+}
+.contact-row .c-val { font-size: 0.97rem; color: #2c2c2c; font-weight: 400; }
+
+/* FOOTER */
+footer {
+background: #1d5f6e !important;
+padding: 2.5rem 1.5rem;
+text-align: center;
+}
+.footer-logo { height: 44px; width: auto; object-fit: contain; margin-bottom: 1.25rem; background: #f7eee7; border-radius: 8px; padding: 5px 10px; }
+.footer-links {
+display: flex; gap: 1.75rem; justify-content: center;
+flex-wrap: wrap; margin-bottom: 1.25rem;
+}
+.footer-links a {
+color: rgba(255,255,255,0.7) !important; text-decoration: none !important;
+font-size: 0.88rem; transition: color 0.2s;
+}
+.footer-links a:hover { color: white; }
+.footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.5) !important; line-height: 1.6; }
+
+/* DIVIDER */
+.divider { border: none; border-top: 1px solid rgba(180,150,110,0.25); margin: 0; }
+
+@media (max-width: 600px) {
+.nav-links { gap: 1rem; }
+.nav-links a { font-size: 0.72rem; }
+}
+/* MAP */
+.map-container {
+max-width: 680px;
+margin: 2rem auto 0;
+}
+#map {
+width: 100%;
+height: 320px;
+border-radius: 16px;
+overflow: hidden;
+border: 1px solid rgba(180,150,110,0.25);
+box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.map-caption {
+text-align: center;
+font-size: 0.85rem;
+color: #6b6560;
+margin-top: 0.75rem;
+font-style: italic;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+
+<nav>
+  <a class="nav-logo" href="#"><img src="homepaws-logo.png" alt="HomePaws"></a>
+  <ul class="nav-links">
+    <li><a href="#services" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.88rem;">Services</a></li>
+    <li><a href="#pricing" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.88rem;">Pricing</a></li>
+    <li><a href="#boarding" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.88rem;">Boarding</a></li>
+    <li><a href="#contact" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.88rem;">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-inner">
+    <img class="hero-logo" src="catnanny-logo.png" alt="The Cat Nanny by HomePaws">
+    <p class="hero-tagline">Specializing in stress-free, in-home cat care &mdash;<br>in your home or mine.</p>
+    <div class="hero-buttons">
+      <a href="tel:7155774568" class="btn-teal" style="display:block;width:100%;text-align:center;background:#2a7b8c;color:white;padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1rem;box-sizing:border-box;">Call or Text to Book</a>
+      <a href="#pricing" class="btn-outline-orange" style="display:block;width:100%;text-align:center;background:transparent;color:#e2722a;padding:0.95rem 2rem;border-radius:50px;border:2px solid #e2722a;text-decoration:none;font-weight:700;font-size:1rem;box-sizing:border-box;">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- MEET & GREET -->
+
+<div class="meet-banner">
+  <div class="meet-card">
+    <div class="meet-card-top">
+      <span class="meet-paws">🐾</span>
+      <div>
+        <h3>Free Meet &amp; Greet!</h3>
+        <p>Before your first booking, I always offer a complimentary in-home meet-and-greet &mdash; so your cat and I can get acquainted before you ever leave town.</p>
+      </div>
+    </div>
+    <a href="tel:7155774568" class="btn-orange" style="display:inline-block;background:#e2722a;color:white;padding:0.75rem 1.75rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.9rem;">Schedule Yours</a>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- SERVICES -->
+
+<section id="services">
+  <div class="section-inner">
+    <p class="section-label">What We Offer</p>
+    <h2 class="section-title">Every Visit, with Heart</h2>
+    <p class="section-sub">Each drop-in includes everything your cat needs to feel happy and loved.</p>
+    <div class="service-list">
+      <div class="service-card">
+        <span class="service-emoji">🍽️</span>
+        <div>
+          <h4>Feeding &amp; Fresh Water</h4>
+          <p>Your cat's specific food routine, followed exactly &mdash; wet, dry, raw, or prescription diets.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <span class="service-emoji">🗑️</span>
+        <div>
+          <h4>Litter Box Care</h4>
+          <p>Scooped and freshened every visit so your cat always has a clean space.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <span class="service-emoji">🧶</span>
+        <div>
+          <h4>Playtime &amp; Affection</h4>
+          <p>Interactive play, brushing, and lap time &mdash; as much or as little as your cat prefers.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <span class="service-emoji">💊</span>
+        <div>
+          <h4>Medication Administration</h4>
+          <p>Experienced with oral meds, injections (insulin), subcutaneous fluids, and eye/ear drops.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <span class="service-emoji">📸</span>
+        <div>
+          <h4>Photo Updates</h4>
+          <p>A detailed visit report with photos sent to you after every single visit.</p>
+        </div>
+      </div>
+
+```
+</div>
+```
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- WHY HOMEPAWS -->
+
+<section id="why">
+  <div class="section-inner">
+    <p class="why-script">Why HomePaws?</p>
+    <h2 class="section-title">Cat care that feels like family</h2>
+    <p style="height:1.5rem"></p>
+    <p class="why-body">I'm not just a pet sitter &mdash; I'm a lifelong cat lover who understands that your cat is family. Every visit is personal, attentive, and centered around your cat's comfort.</p>
+    <p class="why-body">Based in Chippewa Falls, WI, I serve a 30-mile radius and have experience with cats of all personalities &mdash; from social butterflies to shy introverts.</p>
+    <ul class="why-checks">
+      <li>Experience with medical needs and special care</li>
+      <li>Consistent caregiver &mdash; no strangers in your home</li>
+      <li>Your cat stays in their own environment, stress-free</li>
+      <li>Free meet &amp; greet before every new booking</li>
+    </ul>
+    <a href="tel:7155774568" class="btn-orange-center" style="display:block;width:fit-content;margin:0 auto;background:#e2722a;color:white;padding:0.85rem 2rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.95rem;">Get in Touch</a>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- PRICING -->
+
+<section id="pricing">
+  <div class="section-inner">
+    <p class="section-label">Transparent Pricing</p>
+    <h2 class="section-title">Simple, Honest Rates</h2>
+    <p class="section-sub">No hidden fees. Just reliable, loving care at a fair price.</p>
+    <div class="price-list">
+      <div class="price-card">
+        <h4>Drop-In &mdash; 30 min</h4>
+        <div class="price-amount">
+          <span class="price-dollar">$</span>
+          <span class="price-num">27</span>
+          <span class="price-unit">starting at / visit</span>
+        </div>
+        <p class="price-desc">Feeding, litter, playtime &amp; love</p>
+      </div>
+      <div class="price-card popular">
+        <span class="popular-badge">Popular</span>
+        <h4>Drop-In &mdash; 45 min</h4>
+        <div class="price-amount">
+          <span class="price-dollar">$</span>
+          <span class="price-num">34</span>
+          <span class="price-unit">starting at / visit</span>
+        </div>
+        <p class="price-desc">Everything above plus extra play &amp; cuddle time</p>
+      </div>
+      <div class="price-card">
+        <h4>Drop-In &mdash; 60 min</h4>
+        <div class="price-amount">
+          <span class="price-dollar">$</span>
+          <span class="price-num">40</span>
+          <span class="price-unit">starting at / visit</span>
+        </div>
+        <p class="price-desc">Full hour of care, grooming &amp; enrichment</p>
+      </div>
+      <div class="price-card">
+        <h4>Overnight Stay</h4>
+        <div class="price-amount">
+          <span class="price-dollar">$</span>
+          <span class="price-num">110</span>
+          <span class="price-unit">starting at / night</span>
+        </div>
+        <p class="price-desc">7 PM to 7 AM, includes all standard care plus bedtime routine</p>
+      </div>
+      <div class="addons-card">
+        <h4>Add-Ons</h4>
+        <p>
+          Additional cat: +&#36;10 per visit<br>
+          Injections / medical care: +&#36;10 per visit<br>
+          Holiday visits: +&#36;15 per visit
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- BOARDING -->
+
+<section id="boarding">
+  <div class="section-inner">
+    <p class="section-label">Something Extra</p>
+    <h2 class="section-title">In-Home Cat Boarding</h2>
+    <p class="section-sub">Prefer your cat to have a cozy home away from home? I've got you covered.</p>
+    <div class="boarding-card">
+      <span class="b-icon">🏡</span>
+      <h3>Your Cat's Own Private Room &mdash; <span>starting at &#36;60/night</span></h3>
+      <p class="b-sub">I'm happy to welcome your cat into my home! They'll have their own dedicated space &mdash; a large, comfortable room stocked with everything they need to feel right at home.</p>
+      <ul class="boarding-features">
+        <li>🛏️ Private room &mdash; just for your cat</li>
+        <li>🧸 All accessories provided (beds, toys, litter, scratching posts)</li>
+        <li>🔍 Just bring their food and any medications</li>
+        <li>📸 Daily photo updates so you can see them thriving</li>
+        <li>❤️ Calm, quiet home environment &mdash; no dogs</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CANCELLATION -->
+
+<section id="cancellation">
+  <div class="section-inner">
+    <p class="section-label">Good to Know</p>
+    <h2 class="section-title">Cancellation Policy</h2>
+    <p class="section-sub">Life happens &mdash; here's how I handle changes to bookings.</p>
+    <div class="cancel-list">
+      <div class="cancel-card">
+        <span class="c-icon">📅</span>
+        <h4>48+ Hours Notice</h4>
+        <p>Full refund &mdash; no questions asked.</p>
+      </div>
+      <div class="cancel-card">
+        <span class="c-icon">⏳</span>
+        <h4>24&ndash;48 Hours Notice</h4>
+        <p>50% refund of the booking total.</p>
+      </div>
+      <div class="cancel-card">
+        <span class="c-icon">🚨</span>
+        <h4>Less Than 24 Hours</h4>
+        <p>No refund &mdash; time has been reserved for your pet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CONTACT -->
+
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-label">Get in Touch</p>
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-sub">Ready to book or just have questions? Reach out anytime.</p>
+    <div class="contact-card">
+      <a href="tel:7155774568" class="contact-row">
+        <span class="c-icon">📞</span>
+        <div>
+          <div class="c-label">Phone / Text</div>
+          <div class="c-val">715-577-4568</div>
+        </div>
+      </a>
+      <div class="contact-row">
+        <span class="c-icon">📍</span>
+        <div>
+          <div class="c-label">Location</div>
+          <div class="c-val">Chippewa Falls, WI · 30-mile radius</div>
+        </div>
+      </div>
+    </div>
+
+```
+<!-- MAP -->
+<div class="map-container">
+  <div id="map"></div>
+  <p class="map-caption">📍 Serving Chippewa Falls &amp; surrounding areas within a 30-mile radius</p>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer style="background:#1d5f6e;padding:2.5rem 1.5rem;text-align:center;">
+  <img src="homepaws-logo.png" alt="HomePaws" class="footer-logo">
+
+  <div class="footer-links">
+    <a href="#services" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.88rem;">Services</a>
+    <a href="#pricing" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.88rem;">Pricing</a>
+    <a href="#boarding" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.88rem;">Boarding</a>
+    <a href="#why" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.88rem;">About</a>
+    <a href="#contact" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.88rem;">Contact</a>
+  </div>
+  <p class="footer-copy" style="color:rgba(255,255,255,0.6);font-size:0.8rem;line-height:1.6;">© 2025 The Cat Nanny by HomePaws Pet Sitting · Chippewa Falls, WI</p>
+  <p class="footer-copy" style="color:rgba(255,255,255,0.6);font-size:0.8rem;line-height:1.6;">Made with 🧡 for cats everywhere</p>
+</footer>
+
+<script>
+  (function() {
+    var lat = 44.9372, lng = -91.3929;
+    var m = L.map("map", { zoomControl: true, scrollWheelZoom: false }).setView([lat, lng], 10);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "",
+      maxZoom: 18
+    }).addTo(m);
+    L.circle([lat, lng], {
+      radius: 48280,
+      color: "#e2722a",
+      fillColor: "#e2722a",
+      fillOpacity: 0.12,
+      weight: 2,
+      opacity: 0.6
+    }).addTo(m);
+    var icon = L.divIcon({
+      className: "",
+      html: "<div style=\"background:#2a7b8c;width:14px;height:14px;border-radius:50%;border:3px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.3);\"></div>",
+      iconSize: [14, 14],
+      iconAnchor: [7, 7]
+    });
+    L.marker([lat, lng], {icon: icon}).addTo(m)
+      .bindPopup("<strong>The Cat Nanny</strong><br>Chippewa Falls, WI").openPopup();
+  })();
+</script>
+
+</body>
+</html>
